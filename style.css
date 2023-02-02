@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+
 #fade {
     position: fixed;
     top: 0;
@@ -13,12 +16,14 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 550px;
+    height: 400px;
     max-width: 90%;
     background-color: #fff;
     padding: 1.2rem;
     border-radius: 0.5rem;
     z-index: 10;
+    font-family: 'Montserrat', sans-serif;
   }
   
   #fade,
@@ -28,17 +33,48 @@
     pointer-events: all;
   }
   
-  .modali-header {
+  .modal-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    text-align: center;
+    
     margin-bottom: 1rem;
     padding-bottom: 1rem;
   }
+
+  .modal-header {
+    text-align: center;
+  }
+
+  .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
   
-  .modali-body p {
+  .modal-body p {
+    font-size: 20px;
     margin-bottom: 1rem;
+  }
+
+  .modal-body h2 {
+    padding-bottom: 30px;
+    
+  }
+
+  .modal-body button{
+    width: 230px;
+    height: 45px;
+    text-transform: uppercase;
+    background-color: #2A3342;
+    color: white;
+    padding: 10px;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
   }
   
   #modali.hide,
@@ -50,3 +86,9 @@
   #modali.hide {
     top: 0;
   }
+
+  #close-modal {
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
