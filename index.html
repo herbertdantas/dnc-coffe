@@ -7,10 +7,35 @@
     <title>DNC COFFE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     
 
 </head>
 <body style="background-color: #F6F5FB">
+
+  
+    <div id="fade" class="hide"></div>
+    <div id="modali" class="hide">
+      <div class="modal-header">
+        <h2>Este é o Modal</h2>
+        <button id="close-modal">Fechar</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
+          Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
+          voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
+          repellat vel necessitatibus.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius alias
+          voluptate doloremque, totam inventore autem quis non error! Earum
+          ullam fuga, officiis voluptates pariatur unde et adipisci ducimus non
+          obcaecati.
+        </p>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg shadow-sm " style="background-color: #FFFFFF; height: 80px" >
         <div class="container-fluid">           
             <a class="navbar-brand fw-bold " href="#" style="color: #2A3342" >
@@ -25,7 +50,7 @@
                         <a class="nav-link fw-semibold " href="#" style="color: #2A3342">Sobre</a>
                     </li>
                     <li class="nav-item px-4">
-                        <button class="nav-link fw-semibold " style="color: #2A3342; border: none; background-color: #FFFFFF;" data-bs-toggle="modal" data-bs-target="#exampleModal">Atendimento</button>
+                        <button class="nav-link fw-semibold " id="open-modal" style="color: #2A3342; border: none; background-color: #FFFFFF;">Atendimento</button>
                     </li>
                 </ul>
                 <a href="" class="btn btn-outline-dark rounded-pill ms-auto fw-bold" >Fazer Pedido</a>
@@ -39,6 +64,8 @@
     </main>
 
     <section class="d-flex m-5 gap-4 mt-5" >
+
+      
 
         <div id="card1" onmouseover="botaoVisivel()" onmouseout="botaoInvisivel()" class="card flex-fill" style="width: 18rem;">
             <img src="./assets/images/card1.svg" class="card-img-top" alt="...">
@@ -77,28 +104,7 @@
 
     </section>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content ">
-          
-          <div style="border: 0" class="modal-header d-flex flex-column justify-content-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <h1 class="modal-title fs-5 m-4" id="exampleModalLabel">Atendimento</h1>
-            
-          </div>
-          <div style="border: 0" class="modal-body d-flex flex-column justify-content-center text-center">
-            <p>
-              Rua José de Alencar, 111, Centro</p>
-              <p>CEP: 12209-000 | +55 (11) 3333-8000</p>
-          </div>
-          <div style="border: 0" class="modal-footer d-flex flex-column justify-content-center">
-            
-            <button type="button" class="btn m-4" style="background-color: #2A3342; color: #FFFFFF;">ENTRAR EM CONTATO</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+        
     <script src="./assets/script.js"></script>
 </body>
 </html>

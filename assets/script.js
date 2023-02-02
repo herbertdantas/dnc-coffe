@@ -62,3 +62,19 @@ card4.addEventListener('mouseout', (event) => {
 
     document.getElementById("btn4").style.display="none"
 })
+
+
+
+const openModalButton = document.querySelector("#open-modal");
+const closeModalButton = document.querySelector("#close-modal");
+const modali = document.querySelector("#modali");
+const fade = document.querySelector("#fade");
+
+const toggleModal = () => {
+  modali.classList.toggle("hide");
+  fade.classList.toggle("hide");
+};
+
+[openModalButton, closeModalButton, fade].forEach((el) => {
+  el.addEventListener("click", () => toggleModal());
+});
